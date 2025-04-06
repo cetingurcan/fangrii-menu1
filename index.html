@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fangrii Restoran Menüsü</title>
+  <script src="https://cdn.jsdelivr.net/npm/turn.js@4/turn.min.js"></script>
+  <style>
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #flipbook {
+      width: 90vw;
+      height: 90vh;
+    }
+    #flipbook .page {
+      width: 100%;
+      height: 100%;
+    }
+    #flipbook .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="page_1.jpg"></div>
+<div class="page"><img src="page_2.jpg"></div>
+<div class="page"><img src="page_3.jpg"></div>
+<div class="page"><img src="page_4.jpg"></div>
+<div class="page"><img src="page_5.jpg"></div>
+<div class="page"><img src="page_6.jpg"></div>
+<div class="page"><img src="page_7.jpg"></div>
+<div class="page"><img src="page_8.jpg"></div>
+<div class="page"><img src="page_9.jpg"></div>
+<div class="page"><img src="page_10.jpg"></div>
+<div class="page"><img src="page_11.jpg"></div>
+<div class="page"><img src="page_12.jpg"></div>
+<div class="page"><img src="page_13.jpg"></div>
+  </div>
+
+  <script>
+    const flipbook = document.getElementById("flipbook");
+    turn(flipbook, {
+      width: flipbook.offsetWidth,
+      height: flipbook.offsetHeight,
+      autoCenter: true,
+    });
+  </script>
+</body>
+</html>
